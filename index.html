@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Overpass+Mono:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/19f95cf4fb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Website Title Nav Bar -->
+    <nav class="navbar">
+      <span class="site-title">WEATHER DASHBOARD</span>
+    </nav>
+
+    <section class="container">
+      <!-- Search Card (left) -->
+      <div class="row">
+        <div class="search-card col-4 container-fluid">
+          <div class="card m-3">
+            <div class="card-body">
+              <!-- Search Cities (Search Card) -->
+              <p class="search-cities">search for a city:</p>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Search for a city"
+                  aria-describedby="button-addon2"
+                />
+                <div class="input-group-append">
+                  <button
+                    class="btn fas fa-search"
+                    type="button"
+                    id="button-addon2"
+                  ></button>
+                </div>
+              </div>
+              <!-- Saved Cities (Search Card) -->
+              <div class="row">
+                <div class="col-sm">
+                  <div class="card">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Weather Info Card (right) -->
+        <div class="weather-info col-8">
+          <div class="card m-3">
+            <div class="card-body">
+              <!-- Selected City Weather Card (Weather Info Card) -->
+              <p class="selected-city">*CITY*</p>
+              <div>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          <div class="card">
+            <!-- 5-Day Forecast Card (Weather Info Card) -->
+            <div class="row">
+                <div class="col">
+                  <div class="day-card"></div>
+                </div>
+                <div class="col">
+                  <div class="day-card"></div>
+                </div>
+                <div class="col">
+                  <div class="day-card"></div>
+                </div>
+                <div class="col">
+                  <div class="day-card"></div>
+                </div>
+                <div class="col">
+                  <div class="day-card"></div>
+                </div>
+              </div>  
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </body>
+</html>
