@@ -56,3 +56,16 @@ body {
     margin: 5px;
     flex-flow: column row nowrap;
 }
+
+.weather-data {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 3em;
+}
+
+.city-name {
+    font-family: 'Overpass Mono', monospace;
+    font-weight: 700;
+    color: cornflowerblue;
+    font-size: xx-large;
+}

@@ -1,3 +1,6 @@
+var date = moment().add(10, 'days').calendar();
+console.log(date);
+
 $(document).ready(function() {
 var storeSearchedCity = "";
 })
@@ -16,6 +19,17 @@ function displayWeatherInfo(searchedCity) {
         method: "GET"
     }).then(function(response) {
         console.log(response);
+        var tBody = $("tbody");
+        var cityName = $("thead");
 
+
+        var city = response.name + " (" + date + ") ";
+        var temp = $("<tr>").text("Temperature: " + response.main.temp + "°F");
+        var humid = $("<tr>").text("Humidity: " + response.main.humidity + "%");
+        var wind = $("<tr>").text("Wind Speed: " + response.wind.speed + " MPH");
+        //console.log(temp, humid, wind);
+
+        tBody.append(temp, humid, wind);
+        cityName.append(city);
     })
 };
