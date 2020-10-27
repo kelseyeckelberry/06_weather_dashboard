@@ -64,8 +64,32 @@ body {
 }
 
 .city-name {
-    font-family: 'Overpass Mono', monospace;
-    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
     color: cornflowerblue;
     font-size: xx-large;
+}
+
+.fa-cloud {
+    color: lightgray;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.fa-sun {
+    color: goldenrod;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.fa-cloud-showers-heavy {
+    color: darkgray;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.fa-snowflake {
+    color: lightgray;
+    margin-right: 10px;
+    padding-bottom: 5px;
 }

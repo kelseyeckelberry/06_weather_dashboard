@@ -15,10 +15,11 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Overpass+Mono:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </head>
 
   <body>
-    <!-- Website Title Nav Bar -->
+    <!-- Website Title -->
     <nav class="navbar">
       <span class="site-title">WEATHER DASHBOARD</span>
     </nav>
@@ -65,14 +66,10 @@
           <div class="card m-3">
             <div class="card-body">
               <!-- Selected City Weather Card (Weather Info Card) -->
-              <div>
+              <div id="data-div">
                 <table class="table">
                     <thead class="city-name"></thead>
-                    <tbody class="weather-data">
-                      <tr></tr>
-                      <tr></tr>
-                      <tr></tr>
-                    </tbody>
+                    <tbody class="weather-data"></tbody>
                   </table>
               </div>
             </div>
@@ -88,6 +85,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/19f95cf4fb.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
 </html>
