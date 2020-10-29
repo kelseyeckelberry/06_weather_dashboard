@@ -93,3 +93,49 @@ body {
     margin-right: 10px;
     padding-bottom: 5px;
 }
+
+.fa-cloud-rain {
+    color: lightgray;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.forecast-div {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: cornflowerblue;
+    font-size: xx-large;
+    padding: 15px;
+}
+
+.wCard1,
+.wCard2,
+.wCard3,
+.wCard4,
+.wCard5 {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.forecast-info1,
+.forecast-info2,
+.forecast-info3,
+.forecast-info4,
+.forecast-info5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: small;
+    color:  rgb(88, 88, 88);
+}
+
+.forecast-date1,
+.forecast-date2,
+.forecast-date3,
+.forecast-date4,
+.forecast-date5 {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color:  rgb(88, 88, 88);
+    font-size: large;
+}
