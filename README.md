@@ -18,4 +18,4 @@ I was tasked with creating a weather dashboard that  runs in the browser and fea
 
 ## Screenshots
 
-![dashboard](./)
+![dashboard](./images/weather-demo.png)

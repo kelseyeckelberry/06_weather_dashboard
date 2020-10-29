@@ -1,9 +1,9 @@
-var date = moment().add(10, 'days').calendar();
-var card1Date = moment().add(1, 'day').format('MM/DD/YYYY');
-var card2Date = moment().add(2, 'day').format('MM/DD/YYYY');
-var card3Date = moment().add(3, 'day').format('MM/DD/YYYY');
-var card4Date = moment().add(4, 'day').format('MM/DD/YYYY');
-var card5Date = moment().add(5, 'day').format('MM/DD/YYYY');
+var date = moment().add(0, 'days').format('MM/DD/YYYY');
+var card1Date = moment().add(1, 'days').format('MM/DD/YYYY');
+var card2Date = moment().add(2, 'days').format('MM/DD/YYYY');
+var card3Date = moment().add(3, 'days').format('MM/DD/YYYY');
+var card4Date = moment().add(4, 'days').format('MM/DD/YYYY');
+var card5Date = moment().add(5, 'days').format('MM/DD/YYYY');
 
 // $(document).ready(function() {
 // var storeSearchedCity = [];
