@@ -1,8 +1,13 @@
 var date = moment().add(10, 'days').calendar();
+var card1Date = moment().add(1, 'day').format('MM/DD/YYYY');
+var card2Date = moment().add(2, 'day').format('MM/DD/YYYY');
+var card3Date = moment().add(3, 'day').format('MM/DD/YYYY');
+var card4Date = moment().add(4, 'day').format('MM/DD/YYYY');
+var card5Date = moment().add(5, 'day').format('MM/DD/YYYY');
 
-$(document).ready(function() {
-var storeSearchedCity = [];
-});
+// $(document).ready(function() {
+// var storeSearchedCity = [];
+// });
 
 $(".btn").on("click", function() {
     var value = $(".form-control").val();
@@ -65,7 +70,7 @@ function day1Forecast (searchedCity) {
     var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchedCity + "&units=imperial&appid=077cc081d0edde56ae0ece8d0be5b7df"
 
     $('.forecast-date1').empty();
-    $('.forecast-icon1').empty();
+    $('#forecast-icon1').removeClass();
     $('.forecast-info1').empty();
     
     $.ajax({
@@ -77,7 +82,7 @@ function day1Forecast (searchedCity) {
         var forecastDate = $(".forecast-date1");
         var cardBody = $(".forecast-info1");
 
-        var day = response.list[0].dt_txt;
+        var day = card1Date;
         var temp = "Temp: " + response.list[0].main.temp + "°F";
         var humid = "Humidity: " + response.list[0].main.humidity + "%";
 
@@ -102,7 +107,7 @@ function day2Forecast (searchedCity) {
     var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchedCity + "&units=imperial&appid=077cc081d0edde56ae0ece8d0be5b7df"
 
     $('.forecast-date2').empty();
-    $('.forecast-icon2').empty();
+    $('#forecast-icon2').removeClass();
     $('.forecast-info2').empty();
     
     $.ajax({
@@ -115,7 +120,7 @@ function day2Forecast (searchedCity) {
         var forecastDate = $(".forecast-date2");
         var cardBody = $(".forecast-info2");
 
-        var day = response.list[6].dt_txt;
+        var day = card2Date;
         var temp = "Temp: " + response.list[6].main.temp + "°F";
         var humid = "Humidity: " + response.list[6].main.humidity + "%";
 
@@ -140,7 +145,7 @@ function day3Forecast (searchedCity) {
     var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchedCity + "&units=imperial&appid=077cc081d0edde56ae0ece8d0be5b7df"
 
     $('.forecast-date3').empty();
-    $('.forecast-icon3').empty();
+    $('#forecast-icon3').removeClass();
     $('.forecast-info3').empty();
     
     $.ajax({
@@ -152,7 +157,7 @@ function day3Forecast (searchedCity) {
         var forecastDate = $(".forecast-date3");
         var cardBody = $(".forecast-info3");
 
-        var day = response.list[14].dt_txt;
+        var day = card3Date;
         var temp = "Temp: " + response.list[14].main.temp + "°F";
         var humid = "Humidity: " + response.list[14].main.humidity + "%";
 
@@ -177,7 +182,7 @@ function day4Forecast (searchedCity) {
     var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchedCity + "&units=imperial&appid=077cc081d0edde56ae0ece8d0be5b7df"
 
     $('.forecast-date4').empty();
-    $('.forecast-icon4').empty();
+    $('#forecast-icon4').removeClass();
     $('.forecast-info4').empty();
     
     $.ajax({
@@ -189,7 +194,7 @@ function day4Forecast (searchedCity) {
         var forecastDate = $(".forecast-date4");
         var cardBody = $(".forecast-info4");
 
-        var day = response.list[22].dt_txt;
+        var day = card4Date;
         var temp = "Temp: " + response.list[22].main.temp + "°F";
         var humid = "Humidity: " + response.list[22].main.humidity + "%";
 
@@ -214,7 +219,7 @@ function day5Forecast (searchedCity) {
     var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchedCity + "&units=imperial&appid=077cc081d0edde56ae0ece8d0be5b7df"
 
     $('.forecast-date5').empty();
-    $('.forecast-icon5').empty();
+    $('#forecast-icon5').removeClass();
     $('.forecast-info5').empty();
     
     $.ajax({
@@ -226,7 +231,7 @@ function day5Forecast (searchedCity) {
         var forecastDate = $(".forecast-date5");
         var cardBody = $(".forecast-info5");
 
-        var day = response.list[30].dt_txt;
+        var day = card5Date;
         var temp = "Temp: " + response.list[30].main.temp + "°F";
         var humid = "Humidity: " + response.list[30].main.humidity + "%";
 
